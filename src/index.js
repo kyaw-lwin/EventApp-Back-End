@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
-
+const port = process.env.PORT || 3001;
 const { Event } = require('../models/event');
 const { User } = require('../models/user');
 const { v4: uuidv4} = require('uuid');
